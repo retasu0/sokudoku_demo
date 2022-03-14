@@ -36,16 +36,16 @@ def bunsetsuWakachi(text):
     return wakachi
 
 
-def make_image(text,index):
+def make_image(text,index,WIDTH,HEIGHT,FONT_SIZE):
 
     # 使うフォント，サイズ，描くテキストの設定
     #ttfontname = "data/font/ipaexg.ttf" # ゴシック体
     ttfontname = "data/font/ipaexg.ttf" # 明朝体
-    fontsize = 36
+    fontsize = FONT_SIZE
 
 
     # 画像サイズ，背景色，フォントの色を設定
-    canvasSize    = (600, 300)
+    canvasSize    = (WIDTH, HEIGHT)
     backgroundRGB = (255, 255, 255)
     textRGB       = (0, 0, 0)
 
